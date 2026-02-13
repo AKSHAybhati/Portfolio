@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import Content from "./assets/components/Content";
-import Navbar from "./assets/components/Navbar";
+import Navbar from "./components/Navbar";
+import Content from "./components/Content";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 
