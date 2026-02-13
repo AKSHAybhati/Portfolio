@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import GetInTouchCard from "./getInTouchCard";
+import GetInTouchCard from "./GetInTouchCard";
 
 const LetsWork = () => {
   const [showCard, setShowCard] = useState(false);
