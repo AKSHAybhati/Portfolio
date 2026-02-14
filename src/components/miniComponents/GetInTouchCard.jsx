@@ -31,15 +31,15 @@ const GetInTouchCard = ({ close }) => {
   };
 
   return (
-    <div className="flex flex-col gap-5 w-2/4">
+    <div className="flex flex-col gap-5 w-auto">
       <div
         className="close cursor-pointer font-bold text-2xl flex justify-end"
         onClick={close}
       >
         <i class="bi bi-x-lg"></i>
       </div>
-      <div className="name flex gap-5">
-        <div className="nameCard flex flex-col w-1/2 justify-center gap-3">
+      <div className="name grid md:grid-cols-2 gap-5">
+        <div className="nameCard flex flex-col gap-3">
           <div className="topname">Name</div>
           <input
           name="name"
@@ -49,7 +49,7 @@ const GetInTouchCard = ({ close }) => {
             placeholder="Your Name"
           ></input>
         </div>
-        <div className="emailCard flex flex-col flex-1 justify-center gap-3">
+        <div className="emailCard flex flex-col gap-3">
           <div className="topname">Email</div>
           <input
           name="email"
@@ -66,7 +66,7 @@ const GetInTouchCard = ({ close }) => {
         name="message"
         value={form.message}
         onChange={handleChange}
-          className="px-5 py-3 border border-gray-200 rounded-lg h-32 focus:outline-none resize-none"
+          className="px-5 py-3 border border-gray-200 rounded-lg md:h-32 focus:outline-none resize-none"
           placeholder=""
         ></textarea>
       </div>
