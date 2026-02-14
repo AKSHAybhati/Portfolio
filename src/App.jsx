@@ -1,8 +1,6 @@
 import { useRef } from "react";
 import Navbar from "./components/Navbar";
 import Content from "./components/Content";
-import { Provider } from "react-redux";
-import { store } from "./redux/store";
 
 function App() {
   const refs = {
@@ -22,12 +20,10 @@ function App() {
 
   return (
     <>
-        <Provider store={store}>
           <div className="mainContainer bg-slate-50">
             <Navbar scrollTo={scrollTo} refs={refs} />
             <Content scrollTo={scrollTo} refs={refs} />
           </div>
-        </Provider>
     </>
   );
 }

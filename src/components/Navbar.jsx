@@ -1,6 +1,4 @@
 import { motion } from "motion/react";
-import { useGetComodityQuery } from "../../redux/api/commodities.api";
-import { useEffect } from "react";
 
 const Navbar = ({ scrollTo, refs }) => {
   const container = {
