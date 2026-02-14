@@ -19,7 +19,7 @@ const Content = ({scrollTo,refs}) => {
   };
 
   return (
-    <div className="text-black flex-1 min-h-screen lg:w-3/4 mx-auto flex flex-col gap-32 py-16 px-6">
+    <div className="text-black flex-1 min-h-screen lg:w-3/4 mx-auto flex flex-col gap-12 sm:gap-32 py-6 sm:py-16 px-6">
       <motion.div ref={refs.home}>
         <LandingPage scrollTo={scrollTo} refs={refs}/>
       </motion.div> 
