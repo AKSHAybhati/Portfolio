@@ -16,8 +16,9 @@ const LandingPage = ({ scrollTo, refs }) => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="text-black flex flex-col gap-5"
+      className="text-black flex flex-col lg:flex-row items-center gap-8"
     >
+      <div className="flex-1">
       <motion.div variants={item} className="hello text-gray-500 text-xl">
         Hello, I'm
       </motion.div>
@@ -57,6 +58,7 @@ const LandingPage = ({ scrollTo, refs }) => {
           Contact
         </motion.div>
       </motion.div>
+      </div>
     </motion.div>
   );
 };
