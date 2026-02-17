@@ -30,7 +30,7 @@ const LandingPage = ({ scrollTo, refs }) => {
       </motion.div>
       <motion.div
         variants={item}
-        className="para xl:w-3/4 md:text-xl lg:text-2xl text-gray-600"
+        className="para xl:w-3/4 md:text-xl lg:text-2xl text-gray-600 mt-5"
       >
         I enjoy building scalable web applications and bringing ideas to life
         through clean, efficient code. On the frontend, I focus on creating
